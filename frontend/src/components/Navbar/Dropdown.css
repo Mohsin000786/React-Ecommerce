@@ -1,0 +1,31 @@
+@media(max-width: 960px) {
+ .dropdown{
+ margin-top: 2.7rem;
+ width: 100%;
+ position: relative;
+ left: 0;
+ right: 0;
+ background-color: #f8f8f8;
+}
+
+.drop-content {
+ display: block;
+ align-items: center;
+ position: absolute;
+ z-index: 2;
+}
+
+.drop-content > a {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 0.7rem;
+ font-size: 1rem;
+ text-decoration: none;
+ color: #171717;
+}
+}
+
+

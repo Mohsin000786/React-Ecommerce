@@ -1,0 +1,132 @@
+.screen-detail{
+ max-width: 1300px;
+ margin: 1rem auto;
+ display: flex;
+}
+
+.fa-spinner {
+ font-size: 100px;
+ color: #00bfff;
+ display: block;
+ position: fixed;
+ z-index: 1031;
+ top: 50%;
+ right: 50%;
+ margin-top: -..px;
+ margin-right: -..px;
+}
+
+.Instock{
+ color: green;
+}
+.Outstock{
+ color: red;
+}
+
+.left-detail{
+ display: flex;
+ flex: 0.8;
+}
+
+.left-image{
+ margin: 1rem;
+ flex: 0.4;
+}
+
+.left-info{
+ margin: 1rem;
+ flex: 0.6;
+ background: #f4f4f4;
+ height: fit-content;
+ font-size: 0.9rem;
+}
+
+.left-name{
+ font-weight: bold;
+ font-size: 1.3rem;
+}
+
+.left-info > p,
+.right-info > p {
+ padding: 1rem;
+ border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.left-info > p:last-child,
+.right-info > p:last-child {
+ border: none;
+}
+
+.right-detail {
+ flex: 0.2;
+}
+
+.right-info{
+ width: 250px;
+ margin: 1rem;
+ background: #f4f4f4;
+ box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.right-info > p{
+ padding: 1rem;
+ font-size: 0.8rem;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+}
+
+.In-stock{
+ color: green;
+}
+
+.Out-of-Stock{
+ color: red;
+}
+
+.right-info p > button  {
+ grid-column: 1/-1;
+ padding: 8px 14px;
+ background: #f4f4f4;
+ color: #171717;
+ border: 1px solid #171717;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+.right-info p > button:hover{
+ background:#171717;
+ color: #fff;
+}
+
+.right-info select {
+ padding: 8px 14px;
+}
+
+@media(max-width: 960px){
+ .screen-detail{
+  flex-direction: column;
+}
+
+.left-detail{
+ flex-direction: column;
+ flex: 1;
+}
+
+.left-image{
+ flex: 1;
+}
+
+.left-info{
+ flex: 1;
+}
+
+.right-detail{
+ flex: 1;
+ padding: 1rem;
+}
+
+.right-info{
+ width:100%;
+ margin: 0;
+}
+}

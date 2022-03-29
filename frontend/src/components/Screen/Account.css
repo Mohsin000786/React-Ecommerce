@@ -1,0 +1,131 @@
+.account-screen{
+ max-width: 1300px;
+ margin: 2rem auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.account-section{
+ display: flex;
+ flex: 0.4;
+ margin-bottom: 1.2rem;
+}
+
+
+.account-info {
+ width: 600px;
+ border: 2px solid #000;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+.account-title{
+ text-align: center;
+ font-size: 1.5rem;
+ font-weight: bold;
+ font-family: Brush Script MT, cursive;
+}
+
+.account-image {
+ border-radius: 50%;
+ width: 250px;
+ margin-bottom: 1rem;
+}
+
+.account-profile > p{
+ padding: 0.5rem;
+ font-size: 0.8rem;
+ font-weight: bold;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+}
+
+.account-btn {
+ cursor: pointer;
+ background-color: rgb(4, 99, 138);
+ border: none;
+ color: #fff;
+ width: 40%;
+ padding: 3px 8px;
+ margin: 0.5rem 0rem;
+}
+
+.account-form-screen{
+ display: flex;
+ flex: 0.6;
+}
+
+
+.account-form-section{
+ width: 800px;
+ border: 2px solid #000;
+ height: fit-content;
+ align-items: center;
+ box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+ padding:  1rem;
+}
+
+.account-form-title{
+ text-align: center;
+ margin-bottom: 1rem;
+ color: #000;
+ font-family: Brush Script MT, cursive;
+ font-weight: bold;
+}
+
+.account-form-group,
+.account-form-group label,
+.account-form-group input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.account-form-group label {
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.account-form-group input {
+  padding: 3px 10px;
+  border: 3px solid #000;
+  background-color: rgb(4, 99, 138);
+  outline-width: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.account-image{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.account-profile-upload{
+ cursor: pointer;
+ border-radius: 100%;
+ font-size: 8rem;
+ width: 100%;
+}
+
+.account-profile-form{
+ display: flex;
+ margin-top: 1rem;
+}
+
+.account-upload-btn{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+

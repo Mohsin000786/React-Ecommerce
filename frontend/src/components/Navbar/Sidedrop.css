@@ -1,0 +1,152 @@
+@media(max-width: 960px){
+.sidedrop {
+ width: 50%;
+ height: 100vh;
+ background: #fff;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 200;
+ transform: translateX(-100%);
+ transition: all 0.3s ease-out;
+}
+
+.sidedrop.show{
+ transform: translateX(0);
+}
+
+.sidedrop-title > a {
+  color: #171717;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: Brush Script MT, cursive;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0px 1rem 3rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.drop-content {
+ border: 1px solid black;
+ background-color: #171717;
+ width: 100%;
+ position: relative;
+ height: 7.5rem;
+ margin: 0;
+ transition: all 0.3s ease-out;
+}
+
+.drop-content > ul {
+ display: block;
+ list-style: none;
+ position: absolute;
+ left: 0;
+ right: 0;
+ z-index: 1;
+}
+
+.drop-content > ul > li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.drop-content > ul > li > a{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 0.5rem;
+ font-size: 1rem;
+ text-decoration: none;
+ color: #f4f4f4;
+ width: 100%;
+}
+
+.drop-content > ul > li > a:hover{
+   background: #1E90FF;
+   color: #f4f4f4;
+}
+
+.sidedrop-links > ul{
+ display: block;
+ list-style: none;
+}
+
+.sidedrop-links > li  {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.sidedrop-links > li > a {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 1.2rem;
+ color: #171717;
+ padding: 0.5rem;
+ text-decoration: none;
+ width: 100%;
+}
+
+
+.sidedrop-links > li > a > span {
+ display: flex;
+ align-items: center;
+ text-align: center;
+ margin-left: 8px;
+}
+
+.sidedrop-links > li > a:hover {
+ background:  #1E90FF;
+ color: #f4f4f4;
+}
+
+.cartlogo-badge{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ width: 20px;
+ height: 20px;
+ background: red;
+ border-radius: 50%;
+ color: #f4f4f4;
+ font-size: 1rem;
+ margin-left: 8px;
+}
+
+.sidedrop-links > li > a:hover .cartlogo-badge{
+ background: #f4f4f4;
+ color: #171717;
+}
+
+.drop-btn{
+ text-align: center;
+ border: none;
+ font-size: 1.2rem;
+ color: #171717;
+ width: 100%;
+ background: #fff;
+ padding: 0.5rem;
+ cursor: pointer;
+}
+
+.drop-btn:hover {
+ background:  #1E90FF;
+ color: #f4f4f4;
+}
+}
+
+
+@media(min-width: 960px) {
+ .sidedrop{
+  display: none;
+ }
+}
+
+
